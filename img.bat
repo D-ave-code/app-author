@@ -1,0 +1,1 @@
+docker build -t d4vecode/app-author:1.0.0 .

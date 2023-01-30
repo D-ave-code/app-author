@@ -19,7 +19,7 @@ services:
       - 5432:5432
 
   authpr-service:
-    image: d4vecode/quarqui:1.0.0
+    image: d4vecode/app-author:1.0.0
     environment:
       DB_USER: postgres
       DB_PASSWORD: postgres
@@ -36,7 +36,7 @@ services:
       - "traefik.http.services.authpr-service.loadbalancer.server.port=9000"
 
   books-service:
-    image: d4vecode/examen:1.0.0
+    image: d4vecode/app-book:1.0.0
     environment:
       DB_USER: postgres
       DB_PASSWORD: postgres
