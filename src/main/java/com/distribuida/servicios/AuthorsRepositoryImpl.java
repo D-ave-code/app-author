@@ -44,7 +44,7 @@ public class AuthorsRepositoryImpl implements AuthorsRepository {
 
          Authors.update("first_name = :first_name , last_name = :last_name where id = :id",
                 Parameters.with("first_name",authors.getFirst_name())
-                        .and("last_name",  authors.getFirst_name())
+                        .and("last_name",  authors.getLast_name())
                         .and("id",  authors.getId()));
         Authors author = findById(id);
         return  author;
