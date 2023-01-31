@@ -1,1 +1,1 @@
-docker build -t d4vecode/app-author:1.0.0 .
+docker build -t jaimesalvador/app-author:1.0.0 .
